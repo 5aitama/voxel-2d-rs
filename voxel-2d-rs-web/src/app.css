@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+    font-family: Inter, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+
+    @media (prefers-color-scheme: dark) {
+        --background-color: #1b1b1b;
+        --color: #ffffff;
+    }
+
+    @media (prefers-color-scheme: light) {
+        --background-color: #ffffff;
+        --color: #000000;
+    }
+}
+
+html,
+body {
+    max-height: 100vh;
+    max-width: 100vw;
+
+    height: 100vh;
+    width: 100vw;
+
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-color);
+    color: var(--color);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    padding: 40px;
+}
+
+h1,
+h3 {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 5px;
+}
+
+h3 {
+    font-weight: 300;
+}
